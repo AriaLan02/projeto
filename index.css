@@ -35,8 +35,10 @@ body * {
 }
 
 #container {
-  width: 360px;
+  width: 100%; /*adaptação a tela*/
+  max-width: 500px;
   margin: 56px auto 0px;
+  padding: 0 24px;
   /* padding-top: 56px;*/ /*pode ser margin-top também*/
 }
 
@@ -58,7 +60,7 @@ body * {
 }
 
 /*switch */
-#switch{
+#switch {
   position: relative;
   width: 64px;
   margin: 4px auto;
@@ -76,12 +78,12 @@ body * {
   z-index: 1; /*muda o andar/posição sobre*/
   transform: translateY(-50%);
 }
-.light #switch button{
-right: 0;
-left: initial;
+.light #switch button {
+  right: 0;
+  left: initial;
 }
 
-#switch span{
+#switch span {
   display: block;
   width: 64px;
   height: 24px;
@@ -90,9 +92,7 @@ left: initial;
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px); /*para funcionar em outros navegadores*/
   border-radius: 9999px;
-
 }
-
 
 /*links*/
 ul {
